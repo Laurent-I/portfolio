@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { images } from "../../constants";
 
 import "./Header.scss";
+import AppWrap from "../../Wrapper/AppWrap";
 
 // Starting to work on this tomorrow for sure with great speed
 
@@ -72,4 +73,4 @@ const Header = () => (
   </div>
 );
 
-export default Header;
+export default AppWrap(Header, "home");

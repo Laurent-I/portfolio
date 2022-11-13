@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import "./Navbar.scss";
-import { images } from "../../constants";
+// import { images } from "../../constants";
 import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 
@@ -35,7 +35,9 @@ const Navbar = () => {
               {["home", "about", "work", "contact", "skills", "contacts"].map(
                 (item) => (
                   <li key={item}>
-                    <a href={`#${item}`}>{item}</a>
+                    <a href={`#${item}`} onClick={() => setToggle(false)}>
+                      {item}
+                    </a>
                   </li>
                 )
               )}

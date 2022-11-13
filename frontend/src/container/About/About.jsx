@@ -5,6 +5,7 @@ import { images } from "../../constants";
 import { urlFor, client } from "../../client";
 
 import "./About.scss";
+import AppWrap from "../../Wrapper/AppWrap";
 
 // const abouts = [
 //   {
@@ -40,7 +41,7 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">
-        I know that <span>Good Apps</span> means <span>Good Business</span>
+        I know that <span>Good Apps</span> mean <span>Good Business</span>
       </h2>
 
       <div className="app__profiles">
@@ -66,4 +67,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AppWrap(About, "about");
